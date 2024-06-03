@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+	font-family: 'ubuntu';
+}
+body{
+    overflow-x: hidden;
+}
+header .hero-img {
+    position: relative;
+	background-image: url(img/header-pies.jpg);
+	background-size: cover;
+	background-position: center;
+    /* background-attachment: fixed; */
+	height: 50vh;
+    z-index: 0;
+}
+header .hero-shadow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: -5;
+}
+header .hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	padding: 35px;
+	padding-bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+.hero-text h1 {
+	font-size: 25px;
+    font-weight: bold;
+}
+.hero-text h2 {
+	font-size: 13px;
+}
+.offer h3{
+    font-size: 20px;
+}
+.offer p {
+	font-size: 14px;
+}
+.offer .fa-solid {
+	margin-right: 10px;
+}
+.underline {
+	background-color: #109e31;
+	margin: 0 auto 40px;
+	height: 2px;
+	width: 60px;
+}
+.aboutme {
+	background-color: #ddd;
+}
+.hero-team {
+	position: relative;
+	background-image: url(img/shepherd-dog-4357790_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+}
+.hero-team .hero-shadow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -5;
+}
+.aboutme .card {
+	width: 200xp;
+	padding: 0;
+	scale: 0.9;
+	transition: scale 0.3s;
+}
+.aboutme .card img {
+	height: 300px;
+	object-fit: cover;
+	/* width: 250px; */
+	/* object-fit: cover; */
+}
+.aboutme .card-title {
+	text-transform: uppercase;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.prices .card {
+	width: 300px;
+	padding: 40px 30px 20px;
+	margin: 30px;
+	border-color: #109e31;
+}
+.prices .card p {
+	font-size: 20px;
+}
+.prices .addition-info{
+    position: relative;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.prices .addition-info::after{
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+	border: 1px solid #109e31;
+    border-top:none;
+    border-left: none;
+}
+.prices .addition-info::before{
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+	border: 1px solid #109e31;
+    border-top:none;
+    border-right: none;
+}
+.contact{
+    background-color: #eee;
+}
+.contact-item{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.contact-info{
+    font-size: 20px;
+}
+.contact-item .fa-solid{
+    margin-right: 3px;
+}
+@media (min-width: 400px){
+    .offer h3{
+        font-size: 23px;
+    }
+    .hero-text h2 {
+		font-size: 15px;
+	}
+	.hero-text h1 {
+		font-size: 40px;
+	}
+	.offer p {
+		font-size: 15px;
+	}
+}
+@media (min-width: 768px) {
+	header .hero-img {
+		height: 80vh;
+        background-attachment: fixed;
+	}
+    header .hero-text{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+	.hero-text h2 {
+		font-size: 20px;
+	}
+	.hero-text h1 {
+		font-size: 60px;
+	}
+	.offer p {
+		font-size: 20px;
+	}
+}
